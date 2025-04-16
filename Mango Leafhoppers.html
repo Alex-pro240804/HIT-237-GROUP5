@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mango Leafhoppers </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0a9396;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e9ecef;
+            font-size: 0.9em;
+            color: #333;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Mango Leafhoppers </h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'pest_list' %}">Pest/Disease List</a>
+            <a href="{% url 'about' %}">About</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src= "images/Leafhopper.jpg"  alt="Mango Leafhopper Pest Image">
+
+        <h2>Information</h2>
+        <p>In India, Southeast Asia, Papua New Guinea, and northern Australia, especially Darwin and Katherine, mango leafhoppers are common pests. They are now well established, having been discovered in the NT for the first time in 1997. These pests may cut harvests by as much as 50% and only reproduce on mango plants. Nymphs are greenish, swift-moving, and flightless, but adults are tiny, wedge-shaped, brown insects that jump and fly short distances when startled. Although they multiply all year round, leafhoppers develop more quickly during the blooming and fruiting seasons. They are not to be mistaken with the bigger, wax-covered, harmless flatids.</p>
+
+        <h2>Symptoms and Damage</h2>
+        <p>On non-flowering trees, mango leafhoppers are hard to spot, but they can cause leaf deformation and curving by feeding on and depositing their eggs on immature leaves. Populations may grow quickly during blooming, causing significant harm. Honeydew encourages the spread of sooty mold, while sap-sucking and egg-laying punctures on flower stalks weaken the tree. Fruit loss and decreased tree health are the results of these consequences. Diseases have the potential to cause 50% or greater crop losses if left unchecked.</p>
+
+        <h2>Pest Management</h2>
+        <p>Infestations can be controlled using the same chemical pest control methods to eradicate redbanded thrips right before blooming. It has been demonstrated that effective control may be achieved with two cover sprays of either dimethoate or cabaryl sprayed seven days apart at the rate suggested on the product label. Controlling leafhoppers and redbanded thrips before blooming begins should prevent populations from growing to harmful sizes or necessitating additional chemical treatment throughout the flowering season. Pollinators and other beneficials are less likely to be harmed by pesticides when leafhoppers are controlled before blossoming. Controlling young leafhoppers may be aided by native lacewing larvae and other predators.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Mango Pest Info Project
+    </footer>
+</body>
+</html>
