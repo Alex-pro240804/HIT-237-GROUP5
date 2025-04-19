@@ -1,0 +1,20 @@
+{% extends 'mango_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <div>
+        <div>
+            <img src="{% static 'images/'|add:problem.image_name %}" alt="{{ problem.name }}" style="height: 200px; object-fit: cover;">
+            <div>
+                <h1>{{ problem.name }}</h1>
+                <p>{{ problem.type }}</p>
+                <div>
+                    <h4>Description</h4>
+                    <p>{{ problem.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
