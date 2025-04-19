@@ -1,0 +1,11 @@
+{% extends 'mango_app/base.html' %}
+
+{% block content %}
+<h1>About Us</h2>
+<div>
+    {% for member in team_members %}
+    <h3>Name: {{ member.name }}</h2>
+    <h4>Name: {{ member.id }}</h2>
+    {% endfor %}
+</div>
+{% endblock %}

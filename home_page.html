@@ -1,0 +1,21 @@
+{% extends 'mango_app/base.html' %}
+
+{% block content %}
+<div class="page-header">
+<h1>Welcome to Mango Pest & Diseases</h1>
+<p>
+    Welcome to your comprehensive guide for identifying and managing mango tree health issues. 
+    We provide expert information about pests and diseases affecting mangoes, helping both commercial 
+    growers and home gardeners maintain thriving, productive trees.
+</p>
+</div>
+<div class="problem-card">
+    <h2>Explore:</h3>
+    <ul>
+        <li><a href="{% url 'pest_disease_list' %}">View All Mango Pests and Diseases</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+    </ul>
+</div>
+
+
+{% endblock %}
