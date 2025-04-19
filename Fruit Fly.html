@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit fly</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0a9396;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e9ecef;
+            font-size: 0.9em;
+            color: #333;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Fruit Fly </h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'pest_list' %}">Pest/Disease List</a>
+            <a href="{% url 'about' %}">About</a>
+        </nav>
+    </header>
+
+    <section>
+        <div style="display: flex; gap: 20px;">
+            <img src="images/Fruitfly.jpg" alt="Fruit Fly on mango and vegetables" width="300">
+            <img src="images/Fruitfly2.jpg" alt="Fruit Fly Pest" width="300">
+        </div>
+        
+        
+        <h2>Information</h2>
+        <p>Fruit flies, which impact up to 300 fruit and vegetable species worldwide, are one of the most damaging horticulture pests. By eating within the fruit, their larvae harm it from the inside out, making it unprofitable.</p>
+        <p>These pests have a high rate of reproduction; females can deposit up to 500 eggs, and they fully develop in two weeks.</p>
+        <p>The two primary species in Australia are the Mediterranean fruit fly (Medfly), which is only found in southwest Western Australia, and the Queensland fruit fly (Qfly), which is found in NT, QLD, NSW, and VIC.</p>
+        <p>National control measures and the climate limit their expansion. In the spring, when temperatures are high and host crops like tomatoes, apples, and mangoes are present, populations usually increase.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Mango Pest Info Project
+    </footer>
+</body>
+</html>
