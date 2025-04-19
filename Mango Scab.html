@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mango Scab</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0a9396;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e9ecef;
+            font-size: 0.9em;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Mango Scab </h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'pest_list' %}">Pest/Disease List</a>
+            <a href="{% url 'about' %}">About</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src="images/Mangoscab.jpg" alt="Mango Scab on Mango Leaves and Fruit">
+
+        <h2>Description</h2>
+        <p>In 1943, specimens from Cuba and Florida were used to study the mango scab for the first time. At present, it may be found throughout South East Asia and most other mango-growing regions of the world. In the Philippines and the United States, it is regarded as a fairly mild illness.</p>
+        <p>In January 1997, it was discovered for the first time in Australia, close to Darwin. It was believed to be a kind of blooming anthracnose, although it seems to have been present in Queensland and the Northern Territory since at least the early 1990s.</p>
+
+        <h2>Symptoms</h2>
+        <p>Mango cultivar, age of tissue at infection, water and mineral nutrition, and the plant portion impacted are some of the variables that determine the symptoms. Fruit loses its susceptibility to infection after it reaches around half size, and only immature tissue is susceptible. When the tissue is at the most fragile stage, the presence of free water determines the occurrence of all symptoms.</p>
+        <p>Mango scab mostly affects fruit, resulting in tiny black lesions that may cause the fruit to drop too soon. Scab sores don't turn into soft rot like anthracnose, although they could seem like spray or insect damage. Scab sores are not deep, and there are no indications of chewing or insect presence, unlike bug damage.</p>
+
+        <h2>Control</h2>
+        <p>Control strategies are being established since mango scab is a newly discovered disease in Australia. Strategic spraying may achieve significant levels of scab control or perhaps elimination inside specific properties.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Mango Pest Info Project
+    </footer>
+</body>
+</html>
