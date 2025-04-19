@@ -1,0 +1,22 @@
+{% extends 'mango_app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="page-header">
+    <h1>Mango Pests & Diseases</h1>
+    <p>Learn about common issues affecting mango trees</p>
+</div>
+
+<div class="problems-grid">
+    {% for problem in problems %}
+    <div class="problem-card">
+        <img src="{% static 'images/'|add:problem.image_name %}" alt="{{ problem.name }}">
+        <div class="problem-card-content">
+            <h2>{{ problem.name }}</h2>
+            <p class="type">{{ problem.type }}</p>
+            <p>{{ problem.short_description }}</p>
+            <a href="{% url 'pest_disease_detail' problem.name %}">More Details</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
