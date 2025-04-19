@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Pests & Diseases</title>
+    <link rel="stylesheet" href="{% static 'mango_app/css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="{% url 'home' %}" class="logo">Mango Health</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'pest_disease_list' %}">Pests & Diseases</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>© 2025 Mango Health. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
