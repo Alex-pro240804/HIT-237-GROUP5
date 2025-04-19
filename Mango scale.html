@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mango Scale</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0a9396;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e9ecef;
+            font-size: 0.9em;
+            color: #333;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Mango Scale </h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'pest_list' %}">Pest/Disease List</a>
+            <a href="{% url 'about' %}">About</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src="images/Mangoscale.jpg" alt="Mango Scale Lifecycle and Damage">
+
+        <h2>Lifestyle Information</h2>
+        <p>Depending on the temperature, females deposit 80–200 eggs. Within 24 hours of hatching, crawlers go to feeding areas and settle. Male crawlers congregate in groups near females, while up to 80% of crawlers develop into males. The lifespan is 35–40 days in the summer and 70–85 days in the winter. All year long, mango scale is found, with overlapping generations. It peaks in the spring when it flowers and harvests.</p>
+
+        <h2>Monitoring</h2>
+        <p>Every two weeks, inspect the leaves and twigs that are younger than a year. Lift the translucent white covering. Look for living females, eggs, and crawlers. Observe five branches on each of ten trees per acre; healthy, living scale colonies are clothed in a white cottony growth; females turn pink when their eggs are placed beneath the shell.</p>
+
+        <h2>Scale Management</h2>
+        <p>There is a significant natural mortality rate; control is essential before harvest. After harvest, prune to eliminate any remaining scale populations and provide room in the canopy for sunshine and spray penetration. Target sprays and chemicals to crawler activity.</p>
+
+        <p>Scale insects can be controlled chemically by employing growth regulators or systemic insecticides to stop population increase. Only when there is a noticeable live scale activity in the monitoring should sprays be used. High-volume sprays with mineral oils are recommended after pruning, depending on the extent of disease, and preharvest treatments aid in preventing accumulation during harvest.</p>
+
+        <h2>Damage</h2>
+        <p>Damage reduces the market value of the fruit by causing obvious pink blemishes, light green or yellow spots on the foliage, and in extreme situations, dieback on the leaves and branches.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Mango Pest Info Project
+    </footer>
+</body>
+</html>
